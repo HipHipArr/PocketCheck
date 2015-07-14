@@ -2,9 +2,7 @@
 
 Description:
 
-This is a simple receipt log that keeps track of your spendings and budget. 
-
-This is a simple app that tracks 
+This is a simple app that tracks an individual's spendings and budget in a log. With this app, users can either input the amount of money spent or take a picture of the receipt and have it automatically entered in. This easy to use app allows individuals to compare the amounts of money spent to the actual budget. In the calendar, one can view their spendings for one day, week, etc. The log categorizes the entries and displays the total amount spent, tap, and tix for each entry. Out pie chart allows users to view the amounts of money they spent in each category, and how close they are to thier budget. 
 
 
 # Contributions, Credits, and References
@@ -81,4 +79,13 @@ deleting, adding, editing entries and money info - carol
 
 Tutorials:
 
+
 to-do list - www.youtube.com/watch?v=war0gHL26ns
+
+edit button side swipe - http://blog.apoorvmote.com/uitableviewcell-swipe-custom-button-ios-8-swift/
+
+blurry side menu - https://maniacdev.com/2014/09/open-source-swift-based-ios-8-blurred-side-menu-component
+
+local storage - http://www.raywenderlich.com/85578/first-core-data-app-using-swift
+
+custom button - http://webindream.com/how-to-customise-button-in-swift/
