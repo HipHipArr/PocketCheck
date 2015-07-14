@@ -6,7 +6,8 @@ This is a simple app that tracks an individual's spendings and budget in a log. 
 
 
 # Contributions, Credits, and References
-All Files:
+
+**All Files:**
 
 
 research - all collaborators
@@ -18,11 +19,11 @@ graphics - lauren and maitreyee and Christian Tashima (tashworks.com)
 fonts and implementing fonts - lauren and maitreyee
 
 
-All the CV Calendar Files: 
+**All the CV Calendar Files: **
 
 calendar - https://github.com/Mozharovsky/CVCalendar
 
-comments in /understanding calendar file - mira
+comments in calendar file - mira
 
 implementing into app - carol 
 
@@ -44,7 +45,7 @@ button color configuration - amanda
 labels and correct pie chart display and budget - carol
 
 
-Receipt Log:
+**Receipt Log:**
 
 add entry/edit entry/delete entry - carol
 
@@ -57,7 +58,7 @@ category sidebar - carol
 color scheme, backgrounds and graphics - lauren and maitreyee
 
 
-OCR Image Processing: 
+**OCR Image Processing: **
 
 "love in a snap" tutorial - http://www.raywenderlich.com/93276/implementing-tesseract-ocr-ios
 
@@ -72,13 +73,12 @@ OCR algorithm help - all collaborators
 filters for images to feed in ocr algorithm - carol and amanda
 
 
-Local Storage: 
+**Local Storage: **
 
 deleting, adding, editing entries and money info - carol 
 
 
-Tutorials:
-
+**Tutorials:**
 
 to-do list - www.youtube.com/watch?v=war0gHL26ns
 
