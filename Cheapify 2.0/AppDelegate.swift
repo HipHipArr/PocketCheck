@@ -2,23 +2,24 @@
 //  AppDelegate.swift
 //  Cheapify 2.0
 //
-//  Created by Christine Wen on 7/1/15.
-//  Copyright (c) 2015 Your Friend. All rights reserved.
+//  Created by Carol on 7/1/15.
+//  Copyright (c) 2015 Hip Hip Array[]. All rights reserved.
 //
 
 import UIKit
+//import Parse
+import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+  /*Parse.setApplicationId("YzFIK6NHPfe2EiZbcfdQBCvJQc7Wu2927hHs73I5", clientKey:"c1OTQ6FYxjhtrbavuFgC0zHjUDnDQaCcn45K0pjT5")*/
         return true
     }
-
+    
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
@@ -27,10 +28,52 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidEnterBackground(application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        /*let defaults = NSUserDefaults.standardUserDefaults()
+        let data = NSKeyedArchiver.archivedDataWithRootObject(entryMgr)
+        defaults.setObject(data, forKey: "entries")*/
     }
 
     func applicationWillEnterForeground(application: UIApplication) {
         // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+        
+        /*let defaults: NSUserDefaults = NSUserDefaults.standardUserDefaults()
+        if let data = defaults.objectForKey("entries") as? NSData {
+            if let entries = NSKeyedUnarchiver.unarchiveObjectWithData(data) as? ReceiptManager {
+                entryMgr.self = entries
+            }
+        }
+        
+        if let categoryname = defaults.valueForKey("categoryname") as? String {
+            entryMgr.categoryname = categoryname
+        }
+        if let total = defaults.valueForKey("total") as? Double {
+            entryMgr.total = total
+        }
+        if let tFood = defaults.valueForKey("tFood") as? Double {
+            entryMgr.tFood = tFood
+        }
+        if let tTran = defaults.valueForKey("tTran") as? Double {
+            entryMgr.tTran = tTran
+        }
+        if let tTrav = defaults.valueForKey("tTrav") as? Double {
+            entryMgr.tTrav = tTrav
+        }
+        if let tEnte = defaults.valueForKey("tEnte") as?Double {
+            entryMgr.tEnte = tEnte
+        }
+        if let tOthe = defaults.valueForKey("tOthe") as?Double {
+            entryMgr.tOthe = tOthe
+        }
+        if let tPers = defaults.valueForKey("tPers") as?Double {
+            entryMgr.tPers = tPers
+        }
+        if let tBusi = defaults.valueForKey("tBusi") as? Double {
+            entryMgr.tBusi = tBusi
+        }
+        if let budget = defaults.valueForKey("budget") as?Double {
+            entryMgr.budget = budget
+        }*/
+
     }
 
     func applicationDidBecomeActive(application: UIApplication) {
@@ -39,8 +82,69 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+        self.saveContext()
     }
 
-
+    lazy var applicationDocumentsDirectory: NSURL = {
+        // The directory the application uses to store the Core Data store file. This code uses a directory named "intelligence.io.j" in the application's documents Application Support directory.
+        let urls = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
+        return urls[urls.count-1] as! NSURL
+        }()
+    
+    lazy var managedObjectModel: NSManagedObjectModel = {
+        // The managed object model for the application. This property is not optional. It is a fatal error for the application not to be able to find and load its model.
+        let modelURL = NSBundle.mainBundle().URLForResource("test", withExtension: "momd")!
+        return NSManagedObjectModel(contentsOfURL: modelURL)!
+        }()
+    
+    lazy var persistentStoreCoordinator: NSPersistentStoreCoordinator? = {
+        // The persistent store coordinator for the application. This implementation creates and return a coordinator, having added the store for the application to it. This property is optional since there are legitimate error conditions that could cause the creation of the store to fail.
+        // Create the coordinator and store
+        var coordinator: NSPersistentStoreCoordinator? = NSPersistentStoreCoordinator(managedObjectModel: self.managedObjectModel)
+        let url = self.applicationDocumentsDirectory.URLByAppendingPathComponent("Cheapify 2.0.sqlite")
+        var error: NSError? = nil
+        var failureReason = "There was an error creating or loading the application's saved data."
+        if coordinator!.addPersistentStoreWithType(NSSQLiteStoreType, configuration: nil, URL: url, options: nil, error: &error) == nil {
+            coordinator = nil
+            // Report any error we got.
+            var dict = [String: AnyObject]()
+            dict[NSLocalizedDescriptionKey] = "Failed to initialize the application's saved data"
+            dict[NSLocalizedFailureReasonErrorKey] = failureReason
+            dict[NSUnderlyingErrorKey] = error
+            error = NSError(domain: "YOUR_ERROR_DOMAIN", code: 9999, userInfo: dict)
+            // Replace this with code to handle the error appropriately.
+            // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+            NSLog("Unresolved error \(error), \(error!.userInfo)")
+            abort()
+        }
+        
+        return coordinator
+        }()
+    
+    lazy var managedObjectContext: NSManagedObjectContext? = {
+        // Returns the managed object context for the application (which is already bound to the persistent store coordinator for the application.) This property is optional since there are legitimate error conditions that could cause the creation of the context to fail.
+        let coordinator = self.persistentStoreCoordinator
+        if coordinator == nil {
+            return nil
+        }
+        var managedObjectContext = NSManagedObjectContext()
+        managedObjectContext.persistentStoreCoordinator = coordinator
+        return managedObjectContext
+        }()
+    
+    // MARK: - Core Data Saving support
+    
+    func saveContext () {
+        if let moc = self.managedObjectContext {
+            var error: NSError? = nil
+            if moc.hasChanges && !moc.save(&error) {
+                // Replace this implementation with code to handle the error appropriately.
+                // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+                NSLog("Unresolved error \(error), \(error!.userInfo)")
+                abort()
+            }
+        }
+    }
+    
 }
 

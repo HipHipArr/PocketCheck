@@ -7,12 +7,96 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E0038B91B4D9BEF00AD99B9 /* travel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2E0038B81B4D9BEF00AD99B9 /* travel.jpg */; };
+		2E0038BB1B4D9BF400AD99B9 /* personal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2E0038BA1B4D9BF400AD99B9 /* personal.jpg */; };
+		2E0038BD1B4D9BFB00AD99B9 /* other.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2E0038BC1B4D9BFB00AD99B9 /* other.jpg */; };
+		2E0038BF1B4D9C0200AD99B9 /* business.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2E0038BE1B4D9C0200AD99B9 /* business.jpg */; };
+		2E0038C11B4D9C0600AD99B9 /* food.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2E0038C01B4D9C0600AD99B9 /* food.jpg */; };
+		2E0038C71B4DCC6800AD99B9 /* fav4.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E0038C61B4DCC6800AD99B9 /* fav4.png */; };
+		2E0038C91B4EED6800AD99B9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E0038C81B4EED6800AD99B9 /* AudioToolbox.framework */; };
+		2E0038CB1B4EED6F00AD99B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E0038CA1B4EED6F00AD99B9 /* Foundation.framework */; };
+		2E0038CD1B4EED7600AD99B9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E0038CC1B4EED7600AD99B9 /* CoreGraphics.framework */; };
+		2E0038CF1B4EED7C00AD99B9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E0038CE1B4EED7C00AD99B9 /* CoreLocation.framework */; };
+		2E0038D11B4EED8600AD99B9 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E0038D01B4EED8600AD99B9 /* libz.dylib */; };
+		2E0038D31B4EED8F00AD99B9 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E0038D21B4EED8F00AD99B9 /* MobileCoreServices.framework */; };
+		2E0038D51B4EED9500AD99B9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E0038D41B4EED9500AD99B9 /* QuartzCore.framework */; };
+		2E0038D71B4EED9C00AD99B9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E0038D61B4EED9C00AD99B9 /* Security.framework */; };
+		2E0038D91B4EEDA300AD99B9 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E0038D81B4EEDA300AD99B9 /* StoreKit.framework */; };
+		2E0038DB1B4EEDAA00AD99B9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E0038DA1B4EEDAA00AD99B9 /* SystemConfiguration.framework */; };
+		2E0038E11B4EF57300AD99B9 /* SystemConfiguration.framework in Sources */ = {isa = PBXBuildFile; fileRef = 2E0038DA1B4EEDAA00AD99B9 /* SystemConfiguration.framework */; };
+		2E0038E21B4EF57300AD99B9 /* StoreKit.framework in Sources */ = {isa = PBXBuildFile; fileRef = 2E0038D81B4EEDA300AD99B9 /* StoreKit.framework */; };
+		2E0038E31B4EF57300AD99B9 /* Security.framework in Sources */ = {isa = PBXBuildFile; fileRef = 2E0038D61B4EED9C00AD99B9 /* Security.framework */; };
+		2E0038E41B4EF57300AD99B9 /* QuartzCore.framework in Sources */ = {isa = PBXBuildFile; fileRef = 2E0038D41B4EED9500AD99B9 /* QuartzCore.framework */; };
+		2E0038E51B4EF57300AD99B9 /* MobileCoreServices.framework in Sources */ = {isa = PBXBuildFile; fileRef = 2E0038D21B4EED8F00AD99B9 /* MobileCoreServices.framework */; };
+		2E0038E61B4EF57300AD99B9 /* libz.dylib in Sources */ = {isa = PBXBuildFile; fileRef = 2E0038D01B4EED8600AD99B9 /* libz.dylib */; };
+		2E0038E71B4EF57300AD99B9 /* CoreLocation.framework in Sources */ = {isa = PBXBuildFile; fileRef = 2E0038CE1B4EED7C00AD99B9 /* CoreLocation.framework */; };
+		2E0038E81B4EF57300AD99B9 /* CoreGraphics.framework in Sources */ = {isa = PBXBuildFile; fileRef = 2E0038CC1B4EED7600AD99B9 /* CoreGraphics.framework */; };
+		2E0038E91B4EF57300AD99B9 /* Foundation.framework in Sources */ = {isa = PBXBuildFile; fileRef = 2E0038CA1B4EED6F00AD99B9 /* Foundation.framework */; };
+		2E0038EA1B4EF57300AD99B9 /* AudioToolbox.framework in Sources */ = {isa = PBXBuildFile; fileRef = 2E0038C81B4EED6800AD99B9 /* AudioToolbox.framework */; };
+		2E0038ED1B4EF59B00AD99B9 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E0038EC1B4EF59B00AD99B9 /* libsqlite3.0.dylib */; };
+		2E0038EE1B4EF5BC00AD99B9 /* libsqlite3.0.dylib in Sources */ = {isa = PBXBuildFile; fileRef = 2E0038EC1B4EF59B00AD99B9 /* libsqlite3.0.dylib */; };
+		2E0038F21B4EF68A00AD99B9 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E0038F11B4EF68A00AD99B9 /* Bolts.framework */; };
+		2E0038F41B4EF69100AD99B9 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E0038F31B4EF69100AD99B9 /* Parse.framework */; };
+		2E0038F61B4EF69600AD99B9 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E0038F51B4EF69600AD99B9 /* ParseCrashReporting.framework */; };
+		2E0038F81B4EF69C00AD99B9 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E0038F71B4EF69C00AD99B9 /* ParseFacebookUtils.framework */; };
+		2E0038FA1B4EF6A000AD99B9 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E0038F91B4EF6A000AD99B9 /* ParseFacebookUtilsV4.framework */; };
+		2E0038FC1B4EF6A400AD99B9 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E0038FB1B4EF6A400AD99B9 /* ParseUI.framework */; };
+		2E0038FD1B4F064400AD99B9 /* ParseUI.framework in Sources */ = {isa = PBXBuildFile; fileRef = 2E0038FB1B4EF6A400AD99B9 /* ParseUI.framework */; };
+		2E0038FE1B4F064400AD99B9 /* ParseFacebookUtilsV4.framework in Sources */ = {isa = PBXBuildFile; fileRef = 2E0038F91B4EF6A000AD99B9 /* ParseFacebookUtilsV4.framework */; };
+		2E0038FF1B4F064400AD99B9 /* ParseFacebookUtils.framework in Sources */ = {isa = PBXBuildFile; fileRef = 2E0038F71B4EF69C00AD99B9 /* ParseFacebookUtils.framework */; };
+		2E0039001B4F064400AD99B9 /* ParseCrashReporting.framework in Sources */ = {isa = PBXBuildFile; fileRef = 2E0038F51B4EF69600AD99B9 /* ParseCrashReporting.framework */; };
+		2E0039011B4F064400AD99B9 /* Parse.framework in Sources */ = {isa = PBXBuildFile; fileRef = 2E0038F31B4EF69100AD99B9 /* Parse.framework */; };
+		2E0039021B4F064400AD99B9 /* Bolts.framework in Sources */ = {isa = PBXBuildFile; fileRef = 2E0038F11B4EF68A00AD99B9 /* Bolts.framework */; };
+		2E0039041B4F084A00AD99B9 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E0039031B4F084A00AD99B9 /* CFNetwork.framework */; };
+		2E1D5DD31B4AE4D500E4029D /* CategoryEntries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D5DD21B4AE4D500E4029D /* CategoryEntries.swift */; };
+		2E4084601B5574B7002FC03E /* entertainment.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2E40845F1B5574B7002FC03E /* entertainment.jpg */; };
+		2E4084621B5574BF002FC03E /* transportation.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2E4084611B5574BF002FC03E /* transportation.jpg */; };
+		2E4084641B5576AD002FC03E /* title2(1).jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2E4084631B5576AD002FC03E /* title2(1).jpg */; };
+		2E743DCA1B4C751900A23FB5 /* MDRotatingPieChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E743DC91B4C751900A23FB5 /* MDRotatingPieChart.swift */; };
+		2E743DCC1B4C922A00A23FB5 /* PieChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E743DCB1B4C922A00A23FB5 /* PieChart.swift */; };
+		2EB10BC41B45F2F20099AA45 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB10BC31B45F2F20099AA45 /* Calendar.swift */; };
+		9F49F9B61B44E4BC0078B6A1 /* AddEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F49F9B51B44E4BC0078B6A1 /* AddEntry.swift */; };
+		9F49F9B81B4502A20078B6A1 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F49F9B71B4502A20078B6A1 /* DetailTableViewController.swift */; };
 		9F4C4C461B44C53D004E4C48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4C4C451B44C53D004E4C48 /* AppDelegate.swift */; };
-		9F4C4C481B44C53D004E4C48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4C4C471B44C53D004E4C48 /* ViewController.swift */; };
 		9F4C4C4B1B44C53D004E4C48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F4C4C491B44C53D004E4C48 /* Main.storyboard */; };
-		9F4C4C4D1B44C53D004E4C48 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F4C4C4C1B44C53D004E4C48 /* Images.xcassets */; };
 		9F4C4C501B44C53D004E4C48 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F4C4C4E1B44C53D004E4C48 /* LaunchScreen.xib */; };
 		9F4C4C5C1B44C53D004E4C48 /* Cheapify_2_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4C4C5B1B44C53D004E4C48 /* Cheapify_2_0Tests.swift */; };
+		9F4FD0CE1B44DE4B00225041 /* ReceiptManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4FD0CD1B44DE4B00225041 /* ReceiptManager.swift */; };
+		9F637B601B5333F8000B3175 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F637B5F1B5333F8000B3175 /* libstdc++.dylib */; };
+		9F637B621B53340F000B3175 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F637B611B53340F000B3175 /* CoreImage.framework */; };
+		9F637B661B535031000B3175 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 9F637B651B535031000B3175 /* tessdata */; };
+		9FB71FB81B4F8BF100D4CDA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4C4C471B44C53D004E4C48 /* ViewController.swift */; };
+		9FB71FBB1B50C9E600D4CDA3 /* test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FB71FB91B50C9E600D4CDA3 /* test.xcdatamodeld */; };
+		9FD2FB621B47A1BC00985686 /* CVAuxiliaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD2FB481B47A1BC00985686 /* CVAuxiliaryView.swift */; };
+		9FD2FB631B47A1BC00985686 /* CVCalendarContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD2FB491B47A1BC00985686 /* CVCalendarContentViewController.swift */; };
+		9FD2FB641B47A1BC00985686 /* CVCalendarDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD2FB4A1B47A1BC00985686 /* CVCalendarDayView.swift */; };
+		9FD2FB651B47A1BC00985686 /* CVCalendarDayViewControlCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD2FB4B1B47A1BC00985686 /* CVCalendarDayViewControlCoordinator.swift */; };
+		9FD2FB661B47A1BC00985686 /* CVCalendarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD2FB4C1B47A1BC00985686 /* CVCalendarManager.swift */; };
+		9FD2FB671B47A1BC00985686 /* CVCalendarMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD2FB4D1B47A1BC00985686 /* CVCalendarMenuView.swift */; };
+		9FD2FB681B47A1BC00985686 /* CVCalendarMenuViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD2FB4E1B47A1BC00985686 /* CVCalendarMenuViewDelegate.swift */; };
+		9FD2FB691B47A1BC00985686 /* CVCalendarMonthContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD2FB4F1B47A1BC00985686 /* CVCalendarMonthContentViewController.swift */; };
+		9FD2FB6A1B47A1BC00985686 /* CVCalendarMonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD2FB501B47A1BC00985686 /* CVCalendarMonthView.swift */; };
+		9FD2FB6B1B47A1BC00985686 /* CVCalendarTouchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD2FB511B47A1BC00985686 /* CVCalendarTouchController.swift */; };
+		9FD2FB6C1B47A1BC00985686 /* CVCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD2FB521B47A1BC00985686 /* CVCalendarView.swift */; };
+		9FD2FB6D1B47A1BC00985686 /* CVCalendarViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD2FB531B47A1BC00985686 /* CVCalendarViewAnimator.swift */; };
+		9FD2FB6E1B47A1BC00985686 /* CVCalendarViewAnimatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD2FB541B47A1BC00985686 /* CVCalendarViewAnimatorDelegate.swift */; };
+		9FD2FB6F1B47A1BC00985686 /* CVCalendarViewAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD2FB551B47A1BC00985686 /* CVCalendarViewAppearance.swift */; };
+		9FD2FB701B47A1BC00985686 /* CVCalendarViewAppearanceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD2FB561B47A1BC00985686 /* CVCalendarViewAppearanceDelegate.swift */; };
+		9FD2FB711B47A1BC00985686 /* CVCalendarViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD2FB571B47A1BC00985686 /* CVCalendarViewDelegate.swift */; };
+		9FD2FB721B47A1BC00985686 /* CVCalendarViewPresentationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD2FB581B47A1BC00985686 /* CVCalendarViewPresentationMode.swift */; };
+		9FD2FB731B47A1BC00985686 /* CVCalendarWeekContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD2FB591B47A1BC00985686 /* CVCalendarWeekContentViewController.swift */; };
+		9FD2FB741B47A1BC00985686 /* CVCalendarWeekday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD2FB5A1B47A1BC00985686 /* CVCalendarWeekday.swift */; };
+		9FD2FB751B47A1BC00985686 /* CVCalendarWeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD2FB5B1B47A1BC00985686 /* CVCalendarWeekView.swift */; };
+		9FD2FB761B47A1BC00985686 /* CVDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD2FB5C1B47A1BC00985686 /* CVDate.swift */; };
+		9FD2FB771B47A1BC00985686 /* CVRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD2FB5D1B47A1BC00985686 /* CVRange.swift */; };
+		9FD2FB781B47A1BC00985686 /* CVScrollDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD2FB5E1B47A1BC00985686 /* CVScrollDirection.swift */; };
+		9FD2FB791B47A1BC00985686 /* CVSelectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD2FB5F1B47A1BC00985686 /* CVSelectionType.swift */; };
+		9FD2FB7A1B47A1BC00985686 /* CVSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD2FB601B47A1BC00985686 /* CVSet.swift */; };
+		9FD2FB7B1B47A1BC00985686 /* CVShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD2FB611B47A1BC00985686 /* CVShape.swift */; };
+		9FD2FB7D1B47A22E00985686 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FD2FB7C1B47A22E00985686 /* Images.xcassets */; };
+		9FD2FB831B4991A800985686 /* SideBarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD2FB821B4991A800985686 /* SideBarTableViewController.swift */; };
+		9FD2FB851B4992CA00985686 /* SideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD2FB841B4992CA00985686 /* SideBar.swift */; };
+		9FD2FB871B49D76200985686 /* DayEntries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD2FB861B49D76200985686 /* DayEntries.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +110,84 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9F4C4C401B44C53D004E4C48 /* Cheapify 2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cheapify 2.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E0038B81B4D9BEF00AD99B9 /* travel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = travel.jpg; sourceTree = "<group>"; };
+		2E0038BA1B4D9BF400AD99B9 /* personal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = personal.jpg; sourceTree = "<group>"; };
+		2E0038BC1B4D9BFB00AD99B9 /* other.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = other.jpg; sourceTree = "<group>"; };
+		2E0038BE1B4D9C0200AD99B9 /* business.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = business.jpg; sourceTree = "<group>"; };
+		2E0038C01B4D9C0600AD99B9 /* food.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = food.jpg; sourceTree = "<group>"; };
+		2E0038C61B4DCC6800AD99B9 /* fav4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fav4.png; sourceTree = "<group>"; };
+		2E0038C81B4EED6800AD99B9 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		2E0038CA1B4EED6F00AD99B9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2E0038CC1B4EED7600AD99B9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2E0038CE1B4EED7C00AD99B9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		2E0038D01B4EED8600AD99B9 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		2E0038D21B4EED8F00AD99B9 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		2E0038D41B4EED9500AD99B9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		2E0038D61B4EED9C00AD99B9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		2E0038D81B4EEDA300AD99B9 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		2E0038DA1B4EEDAA00AD99B9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		2E0038DE1B4EF06400AD99B9 /* Cheapify 2.0-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cheapify 2.0-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		2E0038EC1B4EF59B00AD99B9 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		2E0038F11B4EF68A00AD99B9 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../parse-library-1.7.5/Bolts.framework"; sourceTree = "<group>"; };
+		2E0038F31B4EF69100AD99B9 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../parse-library-1.7.5/Parse.framework"; sourceTree = "<group>"; };
+		2E0038F51B4EF69600AD99B9 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseCrashReporting.framework; path = "../parse-library-1.7.5/ParseCrashReporting.framework"; sourceTree = "<group>"; };
+		2E0038F71B4EF69C00AD99B9 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = "../parse-library-1.7.5/ParseFacebookUtils.framework"; sourceTree = "<group>"; };
+		2E0038F91B4EF6A000AD99B9 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtilsV4.framework; path = "../parse-library-1.7.5/ParseFacebookUtilsV4.framework"; sourceTree = "<group>"; };
+		2E0038FB1B4EF6A400AD99B9 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = "../parse-library-1.7.5/ParseUI.framework"; sourceTree = "<group>"; };
+		2E0039031B4F084A00AD99B9 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		2E1D5DD21B4AE4D500E4029D /* CategoryEntries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryEntries.swift; sourceTree = "<group>"; };
+		2E40845F1B5574B7002FC03E /* entertainment.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = entertainment.jpg; sourceTree = "<group>"; };
+		2E4084611B5574BF002FC03E /* transportation.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = transportation.jpg; sourceTree = "<group>"; };
+		2E4084631B5576AD002FC03E /* title2(1).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "title2(1).jpg"; sourceTree = "<group>"; };
+		2E743DC91B4C751900A23FB5 /* MDRotatingPieChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDRotatingPieChart.swift; sourceTree = "<group>"; };
+		2E743DCB1B4C922A00A23FB5 /* PieChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChart.swift; sourceTree = "<group>"; };
+		2EB10BC31B45F2F20099AA45 /* Calendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
+		9F2F9EC71B4656120098F008 /* Cheapify 2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cheapify 2.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F2F9EC81B4656120098F008 /* Cheapify 2.0Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cheapify 2.0Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F49F9B51B44E4BC0078B6A1 /* AddEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEntry.swift; sourceTree = "<group>"; };
+		9F49F9B71B4502A20078B6A1 /* DetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
 		9F4C4C441B44C53D004E4C48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F4C4C451B44C53D004E4C48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F4C4C471B44C53D004E4C48 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9F4C4C4A1B44C53D004E4C48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9F4C4C4C1B44C53D004E4C48 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9F4C4C4F1B44C53D004E4C48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		9F4C4C551B44C53D004E4C48 /* Cheapify 2.0Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cheapify 2.0Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F4C4C5A1B44C53D004E4C48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F4C4C5B1B44C53D004E4C48 /* Cheapify_2_0Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cheapify_2_0Tests.swift; sourceTree = "<group>"; };
+		9F4FD0CD1B44DE4B00225041 /* ReceiptManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptManager.swift; sourceTree = "<group>"; };
+		9F637B5F1B5333F8000B3175 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		9F637B611B53340F000B3175 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		9F637B651B535031000B3175 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		9FB71FBA1B50C9E600D4CDA3 /* test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = test.xcdatamodel; sourceTree = "<group>"; };
+		9FD2FB481B47A1BC00985686 /* CVAuxiliaryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVAuxiliaryView.swift; sourceTree = "<group>"; };
+		9FD2FB491B47A1BC00985686 /* CVCalendarContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVCalendarContentViewController.swift; sourceTree = "<group>"; };
+		9FD2FB4A1B47A1BC00985686 /* CVCalendarDayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVCalendarDayView.swift; sourceTree = "<group>"; };
+		9FD2FB4B1B47A1BC00985686 /* CVCalendarDayViewControlCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVCalendarDayViewControlCoordinator.swift; sourceTree = "<group>"; };
+		9FD2FB4C1B47A1BC00985686 /* CVCalendarManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVCalendarManager.swift; sourceTree = "<group>"; };
+		9FD2FB4D1B47A1BC00985686 /* CVCalendarMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVCalendarMenuView.swift; sourceTree = "<group>"; };
+		9FD2FB4E1B47A1BC00985686 /* CVCalendarMenuViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVCalendarMenuViewDelegate.swift; sourceTree = "<group>"; };
+		9FD2FB4F1B47A1BC00985686 /* CVCalendarMonthContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVCalendarMonthContentViewController.swift; sourceTree = "<group>"; };
+		9FD2FB501B47A1BC00985686 /* CVCalendarMonthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVCalendarMonthView.swift; sourceTree = "<group>"; };
+		9FD2FB511B47A1BC00985686 /* CVCalendarTouchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVCalendarTouchController.swift; sourceTree = "<group>"; };
+		9FD2FB521B47A1BC00985686 /* CVCalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVCalendarView.swift; sourceTree = "<group>"; };
+		9FD2FB531B47A1BC00985686 /* CVCalendarViewAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVCalendarViewAnimator.swift; sourceTree = "<group>"; };
+		9FD2FB541B47A1BC00985686 /* CVCalendarViewAnimatorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVCalendarViewAnimatorDelegate.swift; sourceTree = "<group>"; };
+		9FD2FB551B47A1BC00985686 /* CVCalendarViewAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVCalendarViewAppearance.swift; sourceTree = "<group>"; };
+		9FD2FB561B47A1BC00985686 /* CVCalendarViewAppearanceDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVCalendarViewAppearanceDelegate.swift; sourceTree = "<group>"; };
+		9FD2FB571B47A1BC00985686 /* CVCalendarViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVCalendarViewDelegate.swift; sourceTree = "<group>"; };
+		9FD2FB581B47A1BC00985686 /* CVCalendarViewPresentationMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVCalendarViewPresentationMode.swift; sourceTree = "<group>"; };
+		9FD2FB591B47A1BC00985686 /* CVCalendarWeekContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVCalendarWeekContentViewController.swift; sourceTree = "<group>"; };
+		9FD2FB5A1B47A1BC00985686 /* CVCalendarWeekday.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVCalendarWeekday.swift; sourceTree = "<group>"; };
+		9FD2FB5B1B47A1BC00985686 /* CVCalendarWeekView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVCalendarWeekView.swift; sourceTree = "<group>"; };
+		9FD2FB5C1B47A1BC00985686 /* CVDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVDate.swift; sourceTree = "<group>"; };
+		9FD2FB5D1B47A1BC00985686 /* CVRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVRange.swift; sourceTree = "<group>"; };
+		9FD2FB5E1B47A1BC00985686 /* CVScrollDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVScrollDirection.swift; sourceTree = "<group>"; };
+		9FD2FB5F1B47A1BC00985686 /* CVSelectionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVSelectionType.swift; sourceTree = "<group>"; };
+		9FD2FB601B47A1BC00985686 /* CVSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVSet.swift; sourceTree = "<group>"; };
+		9FD2FB611B47A1BC00985686 /* CVShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVShape.swift; sourceTree = "<group>"; };
+		9FD2FB7C1B47A22E00985686 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9FD2FB821B4991A800985686 /* SideBarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarTableViewController.swift; sourceTree = "<group>"; };
+		9FD2FB841B4992CA00985686 /* SideBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBar.swift; sourceTree = "<group>"; };
+		9FD2FB861B49D76200985686 /* DayEntries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayEntries.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +195,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F637B621B53340F000B3175 /* CoreImage.framework in Frameworks */,
+				9F637B601B5333F8000B3175 /* libstdc++.dylib in Frameworks */,
+				2E0039041B4F084A00AD99B9 /* CFNetwork.framework in Frameworks */,
+				2E0038ED1B4EF59B00AD99B9 /* libsqlite3.0.dylib in Frameworks */,
+				2E0038DB1B4EEDAA00AD99B9 /* SystemConfiguration.framework in Frameworks */,
+				2E0038D91B4EEDA300AD99B9 /* StoreKit.framework in Frameworks */,
+				2E0038F21B4EF68A00AD99B9 /* Bolts.framework in Frameworks */,
+				2E0038D71B4EED9C00AD99B9 /* Security.framework in Frameworks */,
+				2E0038F61B4EF69600AD99B9 /* ParseCrashReporting.framework in Frameworks */,
+				2E0038D51B4EED9500AD99B9 /* QuartzCore.framework in Frameworks */,
+				2E0038F41B4EF69100AD99B9 /* Parse.framework in Frameworks */,
+				2E0038F81B4EF69C00AD99B9 /* ParseFacebookUtils.framework in Frameworks */,
+				2E0038FC1B4EF6A400AD99B9 /* ParseUI.framework in Frameworks */,
+				2E0038D31B4EED8F00AD99B9 /* MobileCoreServices.framework in Frameworks */,
+				2E0038FA1B4EF6A000AD99B9 /* ParseFacebookUtilsV4.framework in Frameworks */,
+				2E0038D11B4EED8600AD99B9 /* libz.dylib in Frameworks */,
+				2E0038CF1B4EED7C00AD99B9 /* CoreLocation.framework in Frameworks */,
+				2E0038CD1B4EED7600AD99B9 /* CoreGraphics.framework in Frameworks */,
+				2E0038CB1B4EED6F00AD99B9 /* Foundation.framework in Frameworks */,
+				2E0038C91B4EED6800AD99B9 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,29 +231,88 @@
 		9F4C4C371B44C53D004E4C48 = {
 			isa = PBXGroup;
 			children = (
+				9F637B5F1B5333F8000B3175 /* libstdc++.dylib */,
+				9F637B611B53340F000B3175 /* CoreImage.framework */,
 				9F4C4C421B44C53D004E4C48 /* Cheapify 2.0 */,
 				9F4C4C581B44C53D004E4C48 /* Cheapify 2.0Tests */,
-				9F4C4C411B44C53D004E4C48 /* Products */,
+				9F2F9EC71B4656120098F008 /* Cheapify 2.0.app */,
+				9F2F9EC81B4656120098F008 /* Cheapify 2.0Tests.xctest */,
+				2E0038DE1B4EF06400AD99B9 /* Cheapify 2.0-Bridging-Header.h */,
 			);
-			sourceTree = "<group>";
-		};
-		9F4C4C411B44C53D004E4C48 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9F4C4C401B44C53D004E4C48 /* Cheapify 2.0.app */,
-				9F4C4C551B44C53D004E4C48 /* Cheapify 2.0Tests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		9F4C4C421B44C53D004E4C48 /* Cheapify 2.0 */ = {
 			isa = PBXGroup;
 			children = (
-				9F4C4C451B44C53D004E4C48 /* AppDelegate.swift */,
+				9FB71FB91B50C9E600D4CDA3 /* test.xcdatamodeld */,
+				2E0038EC1B4EF59B00AD99B9 /* libsqlite3.0.dylib */,
+				2E0038D01B4EED8600AD99B9 /* libz.dylib */,
+				2E0039031B4F084A00AD99B9 /* CFNetwork.framework */,
+				2E0038FB1B4EF6A400AD99B9 /* ParseUI.framework */,
+				2E0038F91B4EF6A000AD99B9 /* ParseFacebookUtilsV4.framework */,
+				2E0038F71B4EF69C00AD99B9 /* ParseFacebookUtils.framework */,
+				2E0038F51B4EF69600AD99B9 /* ParseCrashReporting.framework */,
+				2E0038F31B4EF69100AD99B9 /* Parse.framework */,
+				2E0038F11B4EF68A00AD99B9 /* Bolts.framework */,
+				2E0038DA1B4EEDAA00AD99B9 /* SystemConfiguration.framework */,
+				2E0038D81B4EEDA300AD99B9 /* StoreKit.framework */,
+				2E0038D61B4EED9C00AD99B9 /* Security.framework */,
+				2E0038D41B4EED9500AD99B9 /* QuartzCore.framework */,
+				2E0038D21B4EED8F00AD99B9 /* MobileCoreServices.framework */,
+				2E0038CE1B4EED7C00AD99B9 /* CoreLocation.framework */,
+				2E0038CC1B4EED7600AD99B9 /* CoreGraphics.framework */,
+				2E0038CA1B4EED6F00AD99B9 /* Foundation.framework */,
+				2E0038C81B4EED6800AD99B9 /* AudioToolbox.framework */,
+				2E0038B81B4D9BEF00AD99B9 /* travel.jpg */,
+				2E40845F1B5574B7002FC03E /* entertainment.jpg */,
+				2E0038BA1B4D9BF400AD99B9 /* personal.jpg */,
+				2E0038BC1B4D9BFB00AD99B9 /* other.jpg */,
+				2E4084611B5574BF002FC03E /* transportation.jpg */,
+				2E0038BE1B4D9C0200AD99B9 /* business.jpg */,
+				2E0038C01B4D9C0600AD99B9 /* food.jpg */,
+				2E0038C61B4DCC6800AD99B9 /* fav4.png */,
+				2E4084631B5576AD002FC03E /* title2(1).jpg */,
+				9FD2FB481B47A1BC00985686 /* CVAuxiliaryView.swift */,
+				9FD2FB491B47A1BC00985686 /* CVCalendarContentViewController.swift */,
+				9FD2FB4A1B47A1BC00985686 /* CVCalendarDayView.swift */,
+				9FD2FB4B1B47A1BC00985686 /* CVCalendarDayViewControlCoordinator.swift */,
+				9FD2FB4C1B47A1BC00985686 /* CVCalendarManager.swift */,
+				9FD2FB4D1B47A1BC00985686 /* CVCalendarMenuView.swift */,
+				9FD2FB4E1B47A1BC00985686 /* CVCalendarMenuViewDelegate.swift */,
+				9FD2FB4F1B47A1BC00985686 /* CVCalendarMonthContentViewController.swift */,
+				9FD2FB501B47A1BC00985686 /* CVCalendarMonthView.swift */,
+				9FD2FB511B47A1BC00985686 /* CVCalendarTouchController.swift */,
+				9FD2FB521B47A1BC00985686 /* CVCalendarView.swift */,
+				9FD2FB531B47A1BC00985686 /* CVCalendarViewAnimator.swift */,
+				9FD2FB541B47A1BC00985686 /* CVCalendarViewAnimatorDelegate.swift */,
+				9FD2FB551B47A1BC00985686 /* CVCalendarViewAppearance.swift */,
+				9FD2FB561B47A1BC00985686 /* CVCalendarViewAppearanceDelegate.swift */,
+				9FD2FB571B47A1BC00985686 /* CVCalendarViewDelegate.swift */,
+				9FD2FB581B47A1BC00985686 /* CVCalendarViewPresentationMode.swift */,
+				9FD2FB591B47A1BC00985686 /* CVCalendarWeekContentViewController.swift */,
+				9FD2FB5A1B47A1BC00985686 /* CVCalendarWeekday.swift */,
+				9FD2FB5B1B47A1BC00985686 /* CVCalendarWeekView.swift */,
+				9FD2FB5C1B47A1BC00985686 /* CVDate.swift */,
+				9FD2FB5D1B47A1BC00985686 /* CVRange.swift */,
+				9FD2FB5E1B47A1BC00985686 /* CVScrollDirection.swift */,
+				9FD2FB5F1B47A1BC00985686 /* CVSelectionType.swift */,
+				9FD2FB611B47A1BC00985686 /* CVShape.swift */,
+				9FD2FB601B47A1BC00985686 /* CVSet.swift */,
+				2EB10BC31B45F2F20099AA45 /* Calendar.swift */,
+				2E743DC91B4C751900A23FB5 /* MDRotatingPieChart.swift */,
 				9F4C4C471B44C53D004E4C48 /* ViewController.swift */,
+				2E1D5DD21B4AE4D500E4029D /* CategoryEntries.swift */,
+				9F49F9B71B4502A20078B6A1 /* DetailTableViewController.swift */,
+				9F49F9B51B44E4BC0078B6A1 /* AddEntry.swift */,
+				9F4FD0CD1B44DE4B00225041 /* ReceiptManager.swift */,
+				9FD2FB841B4992CA00985686 /* SideBar.swift */,
+				9FD2FB821B4991A800985686 /* SideBarTableViewController.swift */,
+				9F4C4C451B44C53D004E4C48 /* AppDelegate.swift */,
+				2E743DCB1B4C922A00A23FB5 /* PieChart.swift */,
+				9FD2FB861B49D76200985686 /* DayEntries.swift */,
 				9F4C4C491B44C53D004E4C48 /* Main.storyboard */,
-				9F4C4C4C1B44C53D004E4C48 /* Images.xcassets */,
 				9F4C4C4E1B44C53D004E4C48 /* LaunchScreen.xib */,
+				9FD2FB7C1B47A22E00985686 /* Images.xcassets */,
 				9F4C4C431B44C53D004E4C48 /* Supporting Files */,
 			);
 			path = "Cheapify 2.0";
@@ -90,6 +321,7 @@
 		9F4C4C431B44C53D004E4C48 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9F637B651B535031000B3175 /* tessdata */,
 				9F4C4C441B44C53D004E4C48 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -129,7 +361,7 @@
 			);
 			name = "Cheapify 2.0";
 			productName = "Cheapify 2.0";
-			productReference = 9F4C4C401B44C53D004E4C48 /* Cheapify 2.0.app */;
+			productReference = 9F2F9EC71B4656120098F008 /* Cheapify 2.0.app */;
 			productType = "com.apple.product-type.application";
 		};
 		9F4C4C541B44C53D004E4C48 /* Cheapify 2.0Tests */ = {
@@ -147,7 +379,7 @@
 			);
 			name = "Cheapify 2.0Tests";
 			productName = "Cheapify 2.0Tests";
-			productReference = 9F4C4C551B44C53D004E4C48 /* Cheapify 2.0Tests.xctest */;
+			productReference = 9F2F9EC81B4656120098F008 /* Cheapify 2.0Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -177,7 +409,7 @@
 				Base,
 			);
 			mainGroup = 9F4C4C371B44C53D004E4C48;
-			productRefGroup = 9F4C4C411B44C53D004E4C48 /* Products */;
+			productRefGroup = 9F4C4C371B44C53D004E4C48;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -192,9 +424,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FD2FB7D1B47A22E00985686 /* Images.xcassets in Resources */,
+				2E0038BB1B4D9BF400AD99B9 /* personal.jpg in Resources */,
+				2E0038B91B4D9BEF00AD99B9 /* travel.jpg in Resources */,
+				2E0038C11B4D9C0600AD99B9 /* food.jpg in Resources */,
+				9F637B661B535031000B3175 /* tessdata in Resources */,
+				2E4084601B5574B7002FC03E /* entertainment.jpg in Resources */,
 				9F4C4C4B1B44C53D004E4C48 /* Main.storyboard in Resources */,
 				9F4C4C501B44C53D004E4C48 /* LaunchScreen.xib in Resources */,
-				9F4C4C4D1B44C53D004E4C48 /* Images.xcassets in Resources */,
+				2E4084641B5576AD002FC03E /* title2(1).jpg in Resources */,
+				2E4084621B5574BF002FC03E /* transportation.jpg in Resources */,
+				2E0038BD1B4D9BFB00AD99B9 /* other.jpg in Resources */,
+				2E0038BF1B4D9C0200AD99B9 /* business.jpg in Resources */,
+				2E0038C71B4DCC6800AD99B9 /* fav4.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +454,62 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F4C4C481B44C53D004E4C48 /* ViewController.swift in Sources */,
+				2E0038FD1B4F064400AD99B9 /* ParseUI.framework in Sources */,
+				2E0038FE1B4F064400AD99B9 /* ParseFacebookUtilsV4.framework in Sources */,
+				2E0038FF1B4F064400AD99B9 /* ParseFacebookUtils.framework in Sources */,
+				2E0039001B4F064400AD99B9 /* ParseCrashReporting.framework in Sources */,
+				2E0039011B4F064400AD99B9 /* Parse.framework in Sources */,
+				2E0039021B4F064400AD99B9 /* Bolts.framework in Sources */,
+				2E0038EE1B4EF5BC00AD99B9 /* libsqlite3.0.dylib in Sources */,
+				2E0038E11B4EF57300AD99B9 /* SystemConfiguration.framework in Sources */,
+				2E0038E21B4EF57300AD99B9 /* StoreKit.framework in Sources */,
+				2E0038E31B4EF57300AD99B9 /* Security.framework in Sources */,
+				2E0038E41B4EF57300AD99B9 /* QuartzCore.framework in Sources */,
+				2E0038E51B4EF57300AD99B9 /* MobileCoreServices.framework in Sources */,
+				2E0038E61B4EF57300AD99B9 /* libz.dylib in Sources */,
+				2E0038E71B4EF57300AD99B9 /* CoreLocation.framework in Sources */,
+				2E0038E81B4EF57300AD99B9 /* CoreGraphics.framework in Sources */,
+				9FB71FB81B4F8BF100D4CDA3 /* ViewController.swift in Sources */,
+				2E0038E91B4EF57300AD99B9 /* Foundation.framework in Sources */,
+				9FB71FBB1B50C9E600D4CDA3 /* test.xcdatamodeld in Sources */,
+				2E0038EA1B4EF57300AD99B9 /* AudioToolbox.framework in Sources */,
+				9FD2FB681B47A1BC00985686 /* CVCalendarMenuViewDelegate.swift in Sources */,
+				9FD2FB781B47A1BC00985686 /* CVScrollDirection.swift in Sources */,
+				9FD2FB711B47A1BC00985686 /* CVCalendarViewDelegate.swift in Sources */,
+				9FD2FB6F1B47A1BC00985686 /* CVCalendarViewAppearance.swift in Sources */,
+				9FD2FB701B47A1BC00985686 /* CVCalendarViewAppearanceDelegate.swift in Sources */,
+				9FD2FB7B1B47A1BC00985686 /* CVShape.swift in Sources */,
+				9FD2FB851B4992CA00985686 /* SideBar.swift in Sources */,
+				9FD2FB791B47A1BC00985686 /* CVSelectionType.swift in Sources */,
+				9FD2FB661B47A1BC00985686 /* CVCalendarManager.swift in Sources */,
+				9F49F9B61B44E4BC0078B6A1 /* AddEntry.swift in Sources */,
+				2E743DCA1B4C751900A23FB5 /* MDRotatingPieChart.swift in Sources */,
+				9FD2FB721B47A1BC00985686 /* CVCalendarViewPresentationMode.swift in Sources */,
+				9FD2FB831B4991A800985686 /* SideBarTableViewController.swift in Sources */,
+				2EB10BC41B45F2F20099AA45 /* Calendar.swift in Sources */,
+				9FD2FB651B47A1BC00985686 /* CVCalendarDayViewControlCoordinator.swift in Sources */,
+				9FD2FB7A1B47A1BC00985686 /* CVSet.swift in Sources */,
+				9FD2FB6C1B47A1BC00985686 /* CVCalendarView.swift in Sources */,
+				2E1D5DD31B4AE4D500E4029D /* CategoryEntries.swift in Sources */,
+				9F49F9B81B4502A20078B6A1 /* DetailTableViewController.swift in Sources */,
+				9FD2FB6B1B47A1BC00985686 /* CVCalendarTouchController.swift in Sources */,
+				9FD2FB641B47A1BC00985686 /* CVCalendarDayView.swift in Sources */,
+				9FD2FB6A1B47A1BC00985686 /* CVCalendarMonthView.swift in Sources */,
+				9FD2FB6D1B47A1BC00985686 /* CVCalendarViewAnimator.swift in Sources */,
+				9FD2FB771B47A1BC00985686 /* CVRange.swift in Sources */,
+				9FD2FB631B47A1BC00985686 /* CVCalendarContentViewController.swift in Sources */,
+				9FD2FB731B47A1BC00985686 /* CVCalendarWeekContentViewController.swift in Sources */,
+				9FD2FB761B47A1BC00985686 /* CVDate.swift in Sources */,
+				9FD2FB621B47A1BC00985686 /* CVAuxiliaryView.swift in Sources */,
+				2E743DCC1B4C922A00A23FB5 /* PieChart.swift in Sources */,
+				9FD2FB871B49D76200985686 /* DayEntries.swift in Sources */,
+				9FD2FB691B47A1BC00985686 /* CVCalendarMonthContentViewController.swift in Sources */,
+				9FD2FB671B47A1BC00985686 /* CVCalendarMenuView.swift in Sources */,
+				9F4FD0CE1B44DE4B00225041 /* ReceiptManager.swift in Sources */,
+				9FD2FB751B47A1BC00985686 /* CVCalendarWeekView.swift in Sources */,
 				9F4C4C461B44C53D004E4C48 /* AppDelegate.swift in Sources */,
+				9FD2FB6E1B47A1BC00985686 /* CVCalendarViewAnimatorDelegate.swift in Sources */,
+				9FD2FB741B47A1BC00985686 /* CVCalendarWeekday.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,9 +632,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/parse-library-1.7.5",
+					/Users/christinewen/Desktop/LoveInASnap/LoveInASnap,
+					"$(PROJECT_DIR)/Cheapify",
+					2.0,
+					"$(PROJECT_DIR)/Cheapify",
+					2.0,
+					"$(PROJECT_DIR)/Cheapify",
+					2.0,
+				);
 				INFOPLIST_FILE = "Cheapify 2.0/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Cheapify 2.0-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -346,9 +656,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/parse-library-1.7.5",
+					/Users/christinewen/Desktop/LoveInASnap/LoveInASnap,
+					"$(PROJECT_DIR)/Cheapify",
+					2.0,
+					"$(PROJECT_DIR)/Cheapify",
+					2.0,
+					"$(PROJECT_DIR)/Cheapify",
+					2.0,
+				);
 				INFOPLIST_FILE = "Cheapify 2.0/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Cheapify 2.0-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -405,6 +728,7 @@
 				9F4C4C611B44C53D004E4C48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9F4C4C621B44C53D004E4C48 /* Build configuration list for PBXNativeTarget "Cheapify 2.0Tests" */ = {
 			isa = XCConfigurationList;
@@ -413,8 +737,23 @@
 				9F4C4C641B44C53D004E4C48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9FB71FB91B50C9E600D4CDA3 /* test.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9FB71FBA1B50C9E600D4CDA3 /* test.xcdatamodel */,
+			);
+			currentVersion = 9FB71FBA1B50C9E600D4CDA3 /* test.xcdatamodel */;
+			name = test.xcdatamodeld;
+			path = ../test.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9F4C4C381B44C53D004E4C48 /* Project object */;
 }
