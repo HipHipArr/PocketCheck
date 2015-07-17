@@ -35,20 +35,9 @@
 		2E0038EA1B4EF57300AD99B9 /* AudioToolbox.framework in Sources */ = {isa = PBXBuildFile; fileRef = 2E0038C81B4EED6800AD99B9 /* AudioToolbox.framework */; };
 		2E0038ED1B4EF59B00AD99B9 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E0038EC1B4EF59B00AD99B9 /* libsqlite3.0.dylib */; };
 		2E0038EE1B4EF5BC00AD99B9 /* libsqlite3.0.dylib in Sources */ = {isa = PBXBuildFile; fileRef = 2E0038EC1B4EF59B00AD99B9 /* libsqlite3.0.dylib */; };
-		2E0038F21B4EF68A00AD99B9 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E0038F11B4EF68A00AD99B9 /* Bolts.framework */; };
-		2E0038F41B4EF69100AD99B9 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E0038F31B4EF69100AD99B9 /* Parse.framework */; };
-		2E0038F61B4EF69600AD99B9 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E0038F51B4EF69600AD99B9 /* ParseCrashReporting.framework */; };
-		2E0038F81B4EF69C00AD99B9 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E0038F71B4EF69C00AD99B9 /* ParseFacebookUtils.framework */; };
-		2E0038FA1B4EF6A000AD99B9 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E0038F91B4EF6A000AD99B9 /* ParseFacebookUtilsV4.framework */; };
-		2E0038FC1B4EF6A400AD99B9 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E0038FB1B4EF6A400AD99B9 /* ParseUI.framework */; };
-		2E0038FD1B4F064400AD99B9 /* ParseUI.framework in Sources */ = {isa = PBXBuildFile; fileRef = 2E0038FB1B4EF6A400AD99B9 /* ParseUI.framework */; };
-		2E0038FE1B4F064400AD99B9 /* ParseFacebookUtilsV4.framework in Sources */ = {isa = PBXBuildFile; fileRef = 2E0038F91B4EF6A000AD99B9 /* ParseFacebookUtilsV4.framework */; };
-		2E0038FF1B4F064400AD99B9 /* ParseFacebookUtils.framework in Sources */ = {isa = PBXBuildFile; fileRef = 2E0038F71B4EF69C00AD99B9 /* ParseFacebookUtils.framework */; };
-		2E0039001B4F064400AD99B9 /* ParseCrashReporting.framework in Sources */ = {isa = PBXBuildFile; fileRef = 2E0038F51B4EF69600AD99B9 /* ParseCrashReporting.framework */; };
-		2E0039011B4F064400AD99B9 /* Parse.framework in Sources */ = {isa = PBXBuildFile; fileRef = 2E0038F31B4EF69100AD99B9 /* Parse.framework */; };
-		2E0039021B4F064400AD99B9 /* Bolts.framework in Sources */ = {isa = PBXBuildFile; fileRef = 2E0038F11B4EF68A00AD99B9 /* Bolts.framework */; };
 		2E0039041B4F084A00AD99B9 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E0039031B4F084A00AD99B9 /* CFNetwork.framework */; };
 		2E1D5DD31B4AE4D500E4029D /* CategoryEntries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D5DD21B4AE4D500E4029D /* CategoryEntries.swift */; };
+		2E38820A1B580F7000D673B5 /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E3882091B580F7000D673B5 /* TesseractOCR.framework */; };
 		2E4084601B5574B7002FC03E /* entertainment.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2E40845F1B5574B7002FC03E /* entertainment.jpg */; };
 		2E4084621B5574BF002FC03E /* transportation.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2E4084611B5574BF002FC03E /* transportation.jpg */; };
 		2E4084641B5576AD002FC03E /* title2(1).jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2E4084631B5576AD002FC03E /* title2(1).jpg */; };
@@ -128,14 +117,9 @@
 		2E0038DA1B4EEDAA00AD99B9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		2E0038DE1B4EF06400AD99B9 /* Cheapify 2.0-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cheapify 2.0-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		2E0038EC1B4EF59B00AD99B9 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
-		2E0038F11B4EF68A00AD99B9 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../parse-library-1.7.5/Bolts.framework"; sourceTree = "<group>"; };
-		2E0038F31B4EF69100AD99B9 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../parse-library-1.7.5/Parse.framework"; sourceTree = "<group>"; };
-		2E0038F51B4EF69600AD99B9 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseCrashReporting.framework; path = "../parse-library-1.7.5/ParseCrashReporting.framework"; sourceTree = "<group>"; };
-		2E0038F71B4EF69C00AD99B9 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = "../parse-library-1.7.5/ParseFacebookUtils.framework"; sourceTree = "<group>"; };
-		2E0038F91B4EF6A000AD99B9 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtilsV4.framework; path = "../parse-library-1.7.5/ParseFacebookUtilsV4.framework"; sourceTree = "<group>"; };
-		2E0038FB1B4EF6A400AD99B9 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = "../parse-library-1.7.5/ParseUI.framework"; sourceTree = "<group>"; };
 		2E0039031B4F084A00AD99B9 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		2E1D5DD21B4AE4D500E4029D /* CategoryEntries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryEntries.swift; sourceTree = "<group>"; };
+		2E3882091B580F7000D673B5 /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = "<group>"; };
 		2E40845F1B5574B7002FC03E /* entertainment.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = entertainment.jpg; sourceTree = "<group>"; };
 		2E4084611B5574BF002FC03E /* transportation.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = transportation.jpg; sourceTree = "<group>"; };
 		2E4084631B5576AD002FC03E /* title2(1).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "title2(1).jpg"; sourceTree = "<group>"; };
@@ -201,16 +185,11 @@
 				2E0038ED1B4EF59B00AD99B9 /* libsqlite3.0.dylib in Frameworks */,
 				2E0038DB1B4EEDAA00AD99B9 /* SystemConfiguration.framework in Frameworks */,
 				2E0038D91B4EEDA300AD99B9 /* StoreKit.framework in Frameworks */,
-				2E0038F21B4EF68A00AD99B9 /* Bolts.framework in Frameworks */,
 				2E0038D71B4EED9C00AD99B9 /* Security.framework in Frameworks */,
-				2E0038F61B4EF69600AD99B9 /* ParseCrashReporting.framework in Frameworks */,
 				2E0038D51B4EED9500AD99B9 /* QuartzCore.framework in Frameworks */,
-				2E0038F41B4EF69100AD99B9 /* Parse.framework in Frameworks */,
-				2E0038F81B4EF69C00AD99B9 /* ParseFacebookUtils.framework in Frameworks */,
-				2E0038FC1B4EF6A400AD99B9 /* ParseUI.framework in Frameworks */,
 				2E0038D31B4EED8F00AD99B9 /* MobileCoreServices.framework in Frameworks */,
-				2E0038FA1B4EF6A000AD99B9 /* ParseFacebookUtilsV4.framework in Frameworks */,
 				2E0038D11B4EED8600AD99B9 /* libz.dylib in Frameworks */,
+				2E38820A1B580F7000D673B5 /* TesseractOCR.framework in Frameworks */,
 				2E0038CF1B4EED7C00AD99B9 /* CoreLocation.framework in Frameworks */,
 				2E0038CD1B4EED7600AD99B9 /* CoreGraphics.framework in Frameworks */,
 				2E0038CB1B4EED6F00AD99B9 /* Foundation.framework in Frameworks */,
@@ -247,13 +226,8 @@
 				9FB71FB91B50C9E600D4CDA3 /* test.xcdatamodeld */,
 				2E0038EC1B4EF59B00AD99B9 /* libsqlite3.0.dylib */,
 				2E0038D01B4EED8600AD99B9 /* libz.dylib */,
+				2E3882091B580F7000D673B5 /* TesseractOCR.framework */,
 				2E0039031B4F084A00AD99B9 /* CFNetwork.framework */,
-				2E0038FB1B4EF6A400AD99B9 /* ParseUI.framework */,
-				2E0038F91B4EF6A000AD99B9 /* ParseFacebookUtilsV4.framework */,
-				2E0038F71B4EF69C00AD99B9 /* ParseFacebookUtils.framework */,
-				2E0038F51B4EF69600AD99B9 /* ParseCrashReporting.framework */,
-				2E0038F31B4EF69100AD99B9 /* Parse.framework */,
-				2E0038F11B4EF68A00AD99B9 /* Bolts.framework */,
 				2E0038DA1B4EEDAA00AD99B9 /* SystemConfiguration.framework */,
 				2E0038D81B4EEDA300AD99B9 /* StoreKit.framework */,
 				2E0038D61B4EED9C00AD99B9 /* Security.framework */,
@@ -454,12 +428,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E0038FD1B4F064400AD99B9 /* ParseUI.framework in Sources */,
-				2E0038FE1B4F064400AD99B9 /* ParseFacebookUtilsV4.framework in Sources */,
-				2E0038FF1B4F064400AD99B9 /* ParseFacebookUtils.framework in Sources */,
-				2E0039001B4F064400AD99B9 /* ParseCrashReporting.framework in Sources */,
-				2E0039011B4F064400AD99B9 /* Parse.framework in Sources */,
-				2E0039021B4F064400AD99B9 /* Bolts.framework in Sources */,
 				2E0038EE1B4EF5BC00AD99B9 /* libsqlite3.0.dylib in Sources */,
 				2E0038E11B4EF57300AD99B9 /* SystemConfiguration.framework in Sources */,
 				2E0038E21B4EF57300AD99B9 /* StoreKit.framework in Sources */,
@@ -643,6 +611,16 @@
 					2.0,
 					"$(PROJECT_DIR)/Cheapify",
 					2.0,
+					"$(PROJECT_DIR)/Cheapify",
+					2.0,
+					"$(PROJECT_DIR)/Cheapify",
+					2.0,
+					"$(PROJECT_DIR)/Cheapify",
+					2.0,
+					"$(PROJECT_DIR)/Cheapify",
+					2.0,
+					"$(PROJECT_DIR)/Cheapify",
+					2.0,
 				);
 				INFOPLIST_FILE = "Cheapify 2.0/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -661,6 +639,16 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/parse-library-1.7.5",
 					/Users/christinewen/Desktop/LoveInASnap/LoveInASnap,
+					"$(PROJECT_DIR)/Cheapify",
+					2.0,
+					"$(PROJECT_DIR)/Cheapify",
+					2.0,
+					"$(PROJECT_DIR)/Cheapify",
+					2.0,
+					"$(PROJECT_DIR)/Cheapify",
+					2.0,
+					"$(PROJECT_DIR)/Cheapify",
+					2.0,
 					"$(PROJECT_DIR)/Cheapify",
 					2.0,
 					"$(PROJECT_DIR)/Cheapify",

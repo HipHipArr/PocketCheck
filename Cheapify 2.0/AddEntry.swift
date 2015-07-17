@@ -1,4 +1,4 @@
-//
+ //
 //  AddEntry.swift
 //  Cheapify 2.0
 //
@@ -102,6 +102,36 @@ class AddEntry: UIViewController, UITextFieldDelegate, UIPickerViewDataSource, U
         }  
         //5
         entryMgr.entries.append(entry)
+    }
+    
+    func textFieldDidBeginEditing(textField: UITextField) { // became first responder
+        
+        //move textfields up
+        let myScreenRect: CGRect = UIScreen.mainScreen().bounds
+        let keyboardHeight : CGFloat = 216
+        
+        UIView.beginAnimations( "animateView", context: nil)
+        var movementDuration: NSTimeInterval = 0.35
+        var needToMove: CGFloat = 0
+        
+        var frame : CGRect = self.view.frame
+        if (textField.frame.origin.y + textField.frame.size.height + /*self.navigationController.navigationBar.frame.size.height + */UIApplication.sharedApplication().statusBarFrame.size.height > (myScreenRect.size.height - keyboardHeight)) {
+            needToMove = (textField.frame.origin.y + textField.frame.size.height + /*self.navigationController.navigationBar.frame.size.height +*/ UIApplication.sharedApplication().statusBarFrame.size.height) - (myScreenRect.size.height - keyboardHeight) + textField.frame.size.height
+        }
+        
+        frame.origin.y = -needToMove
+        self.view.frame = frame
+        UIView.commitAnimations()
+    }
+    
+    func textFieldDidEndEditing(textField: UITextField) {
+        //move textfields back down
+        UIView.beginAnimations( "animateView", context: nil)
+        var movementDuration:NSTimeInterval = 0.35
+        var frame : CGRect = self.view.frame
+        frame.origin.y = 0
+        self.view.frame = frame
+        UIView.commitAnimations()
     }
     
     func DismissKeyboard(){
@@ -415,97 +445,130 @@ class AddEntry: UIViewController, UITextFieldDelegate, UIPickerViewDataSource, U
     }
     
     func processText(){
-        if((str.lowercaseString as NSString).containsString("total")){
-            var range = str.lowercaseString.rangeOfString("total", options: .BackwardsSearch)
-            var index: Int = distance(str.startIndex, range!.startIndex)
-            var price: String = ""
-            var found: Bool = false
-            let myArrayFromString = Array(str)
-            while index<count(str) && !found {
-                var num = str[index].toInt()
-                if num != nil {
-                    found = true
+        if(!str.isEmpty){
+            var name: String = ""
+            var ind: Int = 0
+            while ind<count(str) && str[ind] == "\n" || str[ind] == " " {
+                ind = ind+1
+            }
+            while ind<count(str) && str[ind] != "\n" {
+                name = name+str[ind]
+                ind = ind+1
+            }
+            txtEvent.text = name
+            if((str.lowercaseString as NSString).containsString("total")){
+                var range = str.lowercaseString.rangeOfString("total", options: .BackwardsSearch)
+                var index: Int = distance(str.startIndex, range!.startIndex)
+                var price: String = ""
+                var found: Bool = false
+                let myArrayFromString = Array(str)
+                while index<count(str) && !found {
+                    var num = str[index].toInt()
+                    if num != nil {
+                        found = true
+                    }
+                    else{
+                        index = index+1
+                    }
                 }
-                else{
-                    index = index+1
+                while index<count(str) {
+                    var num = str[index].toInt()
+                    if str[index]=="." || num != nil {
+                        price = price+str[index]
+                    }
+                    else{
+                        break
+                    }
+                    index = index + 1
+                }
+                txtPrice.text = price
+                if price=="" {
+                    txtPrice.text = "0.00"
                 }
             }
-            while index<count(str) {
-                var num = str[index].toInt()
-                if num != nil {
-                    price = price+str[index]
-                }
-                else{
-                    break
-                }
-                index = index + 1
+            else{
+                txtPrice.text = "0.00"
             }
-            txtPrice.text = price
-            println(price)
+            if((str.lowercaseString as NSString).containsString("tip")){
+                var range = str.lowercaseString.rangeOfString("tip", options: .BackwardsSearch)
+                var index: Int = distance(str.startIndex, range!.startIndex)
+                var price: String = ""
+                var found: Bool = false
+                let myArrayFromString = Array(str)
+                while index<count(str) && !found {
+                    var num = str[index].toInt()
+                    if num != nil {
+                        found = true
+                    }
+                    else{
+                        index = index+1
+                    }
+                }
+                while index<count(str) {
+                    var num = str[index].toInt()
+                    if str[index]=="." || num != nil {
+                        price.append(myArrayFromString[index])
+                    }
+                    else{
+                        break
+                    }
+                    index = index + 1
+                }
+                txtTip.text = price
+                if price=="" {
+                    txtTip.text = "0.00"
+                }
+            }
+            else{
+                txtTip.text = "0.00"
+            }
+            if((str.lowercaseString as NSString).containsString("tax")){
+                var range = str.lowercaseString.rangeOfString("tax", options: .BackwardsSearch)
+                var index: Int = distance(str.startIndex, range!.startIndex)
+                var price: String = ""
+                var found: Bool = false
+                let myArrayFromString = Array(str)
+                while index<count(str) && !found {
+                    var num = str[index].toInt()
+                    if num != nil {
+                        found = true
+                    }
+                    else{
+                        index = index+1
+                    }
+                }
+                var number: Bool = false
+                while index<count(str) {
+                    var num = str[index].toInt()
+                    if str[index]=="." || num != nil {
+                        price.append(myArrayFromString[index])
+                    }
+                    else{
+                        break
+                    }
+                    index = index + 1
+                }
+                txtTax.text = price
+                if price=="" {
+                    txtTax.text = "0.00"
+                }
+            }
+            else{
+                txtTax.text = "0.00"
+            }
         }
-        if((str.lowercaseString as NSString).containsString("tip")){
-            var range = str.lowercaseString.rangeOfString("tip", options: .BackwardsSearch)
-            var index: Int = distance(str.startIndex, range!.startIndex)
-            var price: String = ""
-            var found: Bool = false
-            let myArrayFromString = Array(str)
-            while index<count(str) && !found {
-                var num = str[index].toInt()
-                if num != nil {
-                    found = true
-                }
-                else{
-                    index = index+1
-                }
-            }
-            while index<count(str) {
-                var num = str[index].toInt()
-                if str[index]=="." || num != nil {
-                    price.append(myArrayFromString[index])
-                }
-                else{
-                    break
-                }
-                index = index + 1
-            }
-            txtTip.text = price
-            println(price)
-        }
-        if((str.lowercaseString as NSString).containsString("tax")){
-            var range = str.lowercaseString.rangeOfString("tax", options: .BackwardsSearch)
-            var index: Int = distance(str.startIndex, range!.startIndex)
-            var price: String = ""
-            var found: Bool = false
-            let myArrayFromString = Array(str)
-            while index<count(str) && !found {
-                var num = str[index].toInt()
-                if num != nil {
-                    found = true
-                }
-                else{
-                    index = index+1
-                }
-            }
-            while index<count(str) {
-                var num = str[index].toInt()
-                if num != nil {
-                    price.append(myArrayFromString[index])
-                }
-                else{
-                    break
-                }
-                index = index + 1
-            }
-            println(price)
-            txtTax.text = price
+        else{
+            txtPrice.text = "0.00"
+            txtTax.text = "0.00"
+            txtTip.text = "0.00"
         }
     }
 }
 
 extension AddEntry: UITextFieldDelegate {
-    func textFieldDidBeginEditing(textField: UITextField) {
+    /*func textFieldDidBeginEditing(textField: UITextField) {
         moveViewUp()
-    }
+    }*/
     
     @IBAction func textFieldEndEditing(sender: AnyObject) {
         view.endEditing(true)
