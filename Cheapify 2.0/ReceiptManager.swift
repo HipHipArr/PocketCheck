@@ -2,7 +2,7 @@
 //  ReceiptManager.swift
 //  Cheapify 2.0
 //
-//  Created by Carol on 7/1/15.
+//  
 //  Copyright (c) 2015 Hip Hip Array[]. All rights reserved.
 //
 
