@@ -12,13 +12,13 @@ import UIKit
 
 class Calendar: UIViewController {
     // MARK: - Properties
-    @IBOutlet var calendarView: CVCalendarView!    //! operator means you can access the value of the thing it's assigned to no matter what (even if null)
+    @IBOutlet var calendarView: CVCalendarView!    //! operator means value can be accessed, even if assigned value is null.
     @IBOutlet var menuView: CVCalendarMenuView!    //
-    @IBOutlet var monthLabel: UILabel! //The label that shows what the month is
+    @IBOutlet var monthLabel: UILabel! //The label that shows the current month.
     @IBOutlet var button2:UIButton!
     
     var dateClicked: String?
-    var animationFinished = true    //my guess is that it indicates whether the entire calendar has been loaded/drawn
+    var animationFinished = true    //Indicates whether the entire calendar has been loaded/drawn.
     
     // MARK: - Life cycle
     
@@ -38,7 +38,7 @@ class Calendar: UIViewController {
         configureButton()
     }
     
-    //Updates the calendar and the menu?
+    //Updates the calendar and the menu.
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
