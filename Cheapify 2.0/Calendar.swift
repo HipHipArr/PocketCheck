@@ -92,7 +92,7 @@ extension Calendar: CVCalendarViewDelegate
         ringLayer.lineWidth = ringLineWidth //Sets the ring's line width to ringLineWidth (defined in this method as a constant 4.0)
         ringLayer.strokeColor = ringLineColour.CGColor  //Sets the ring's color
         
-        var ringLineWidthInset: CGFloat = CGFloat(ringLineWidth/2.0) + ringInsetWidth   //I'm not sure but I assume it dictates how far from the center of the circle the ring ends (inside diameter)
+        var ringLineWidthInset: CGFloat = CGFloat(ringLineWidth/2.0) + ringInsetWidth   // dictates how far from the center of the circle the ring ends (inside diameter)
         
         let ringRect: CGRect = CGRectInset(rect, ringLineWidthInset, ringLineWidthInset)    //Draws rectangle around where the ring should be (inside of the rectangle rect referenced earlier in the group)
         let centrePoint: CGPoint = CGPointMake(ringRect.midX, ringRect.midY)    //Sets the center of the ring to the center of the rectangle ringRect
@@ -100,8 +100,8 @@ extension Calendar: CVCalendarViewDelegate
         let endAngle: CGFloat = CGFloat(π * 2.0) + startAngle   //end angle is 270 + 360 degrees
         let ringPath: UIBezierPath = UIBezierPath(arcCenter: centrePoint, radius: ringRect.width/2.0, startAngle: startAngle, endAngle: endAngle, clockwise: true)  //This entire section draws the ring
         
-        ringLayer.path = ringPath.CGPath    //CG is different than UI so I presume that ringPath is a UI thing and it needs to be converted to CG
-        ringLayer.frame = newView.layer.bounds  //Bounds for the ring??
+        ringLayer.path = ringPath.CGPath    //CG is different than UI so ringPath is a UI and it needs to be converted to CG
+        ringLayer.frame = newView.layer.bounds  //Bounds for the ring
         
         return newView  //returns the new UI with the new ring put in
     }
